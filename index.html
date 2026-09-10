@@ -18,6 +18,8 @@
         
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/styles.css">
+
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
         <title>Green With Envy</title>
     </head>
     <body>
@@ -294,12 +296,13 @@
                                 </label><br>
                             </div>
                         </div>
-                        
+                        <div class="g-recaptcha" data-sitekey="6Lc8g7QtAAAAAD5-U8OvnC-uzXqvY9JkkSdxPzqY"></div>
                         
                         <label for="subject" style="color: var(--body-color)"></label>
                         <textarea id="subject" name="Subject" placeholder="Any Questions, Comments, or Concerns" style="height:200px"></textarea>
                         
-                        <div class="d-flex justify-content-center">
+                         <div class="d-flex justify-content-center align-items-center" style="gap: 15px; margin: 20px 0; flex-wrap: wrap;">
+                            <div class="g-recaptcha" data-sitekey="6Lc8g7QtAAAAAD5-U8OvnC-uzXqvY9JkkSdxPzqY"></div>
                             <input type="submit" value="Submit">
                         </div>
                     </form>
