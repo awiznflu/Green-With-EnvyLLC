@@ -18,8 +18,6 @@
         
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/styles.css">
-        <!-- <!-======Captcha====-->
-        <script src="https://www.google.com/recaptcha/enterprise.js?render=6LcNdLQtAAAAAMiZGp1KKAcffzkKZJJHpJAIFCzu"></script>
         <title>Green With Envy</title>
     </head>
     <body>
@@ -217,7 +215,6 @@
                 <div class="place__container container">
                     <form class="contact-form" id="contact-form" action="https://formcarry.com/s/CZzy2ieDg72" method="POST">
                         <input type="hidden" name="access_key" value="275bcbff-b2cc-4255-bfe1-e568b54b295f">
-                        <input type="hidden" name="g-recaptcha-response" id="recaptchaToken">
                         <div class="form-row">
                             <div class="col-sm-6">
                                 <label for="fname" style="color: var(--body-color);">First Name</label>
@@ -354,21 +351,6 @@
             </div>
         </footer>
     </main>
-        <script>
-    const contactForm = document.getElementById('contact-form');
-
-    contactForm.addEventListener('submit', function (e) {
-        e.preventDefault();
-
-        grecaptcha.enterprise.ready(function () {
-            grecaptcha.enterprise.execute('6LcNdLQtAAAAAMiZGp1KKAcffzkKZJJHpJAIFCzu', { action: 'contact_submit' })
-                .then(function (token) {
-                    document.getElementById('recaptchaToken').value = token;
-                    contactForm.submit();
-                });
-        });
-    });
-</script>
 
          <!--========== SCROLL UP ==========-->
         <a href="#" class="scrollup" id="scroll-up">
